@@ -24,8 +24,8 @@ public class CompoundInterest_Gloria_Merino
         interest = percentage / 100.0; //converting percentage to decimals
         // System.out.print(interest); <-- used to test if interest was calculated correctcly
         finHome = inHome * Math.pow((1+interest), years);//compound interest formula
-        BigDecimal finprice = BigDecimal.valueOf(finHome);// the final value isn't aligning up so must figure how to only include 2 decimal places
-        
+        double finprice = Math.round(finHome*100)/100;
+
         System.out.print("The Final Value of the home is $"+finprice+".");
     }
 }
