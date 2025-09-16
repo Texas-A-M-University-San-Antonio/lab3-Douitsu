@@ -25,8 +25,8 @@ public class CompoundInterest_Gloria_Merino
         // System.out.print(interest); <-- used to test if interest was calculated correctcly
         
         finHome = inHome * Math.pow(1.0 + interest, years);//compound interest formula
-
-        System.out.println("The Final Value of the home is $"+ finHome +".");
+        double finalPrice = Math.round(finHome*100)/100.0;
+        System.out.println("The Final Value of the home is $"+ finalPrice +".");
         // the final value of the home is $858,374.14 not $858,488.46. SO math is good! 
     }
 }
