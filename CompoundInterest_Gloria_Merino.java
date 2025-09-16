@@ -22,5 +22,6 @@ public class CompoundInterest_Gloria_Merino
         interest = input.nextDouble();
         double interestDec = interest /= 100; //converting percentage to decimals
         finHome = inHome * Math.pow((1+interestDec), years);//compound interest formula
+        System.out.print("The Final Value of the home is $"+finHome+".");
     }
 }
