@@ -23,9 +23,10 @@ public class CompoundInterest_Gloria_Merino
         int percentage = input.nextInt();
         interest = percentage / 100.0; //converting percentage to decimals
         // System.out.print(interest); <-- used to test if interest was calculated correctcly
-        finHome = inHome * Math.pow((1+interest), years);//compound interest formula
-        double finprice = Math.round(finHome*100)/100;
+        
+        finHome = inHome * Math.pow(1.0 + interest, years);//compound interest formula
 
-        System.out.print("The Final Value of the home is $"+finprice+".");
+        System.out.println("The Final Value of the home is $"+ finHome +".");
+        // the final value of the home is $858,374.14 not $858,488.46. SO math is good! 
     }
 }
