@@ -4,6 +4,7 @@
 // convert interest rate from percentage to decimal
 //Final Value will be computed as A = P * (1+r)^t
 
+import java.math.BigDecimal;
 import java.util.Scanner; //first, and allows user input 
 public class CompoundInterest_Gloria_Merino 
 {
@@ -19,9 +20,12 @@ public class CompoundInterest_Gloria_Merino
         System.out.print("Enter the number of years elapsed: ");
         years = input.nextInt();
         System.out.print("Enter the interest rate: ");
-        interest = input.nextDouble();
-        double interestDec = interest /= 100; //converting percentage to decimals
-        finHome = inHome * Math.pow((1+interestDec), years);//compound interest formula
-        System.out.print("The Final Value of the home is $"+finHome+".");
+        int percentage = input.nextInt();
+        interest = percentage / 100.0; //converting percentage to decimals
+        // System.out.print(interest); <-- used to test if interest was calculated correctcly
+        finHome = inHome * Math.pow((1+interest), years);//compound interest formula
+        BigDecimal finprice = BigDecimal.valueOf(finHome);// the final value isn't aligning up so must figure how to only include 2 decimal places
+        
+        System.out.print("The Final Value of the home is $"+finprice+".");
     }
 }
