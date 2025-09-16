@@ -20,7 +20,7 @@ public class CompoundInterest_Gloria_Merino
         years = input.nextInt();
         System.out.print("Enter the interest rate: ");
         interest = input.nextDouble();
-        int interestDec = interest /= 100; //converting percentage to decimals
+        double interestDec = interest /= 100; //converting percentage to decimals
         finHome = inHome * Math.pow((1+interestDec), years);//compound interest formula
     }
 }
