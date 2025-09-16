@@ -3,7 +3,7 @@
  * Date: [9-14-2025]
 * Purpose: InClass 3 - 
 * [Write a description about this InClass 3 program]
-// This code is a short java program that uses math.pow to calculate
+// This code is a short java program that uses math.pow to calculate volume and surface area of a cube
  */
 
 // Don't forget to import and declare a Scanner for user input.
